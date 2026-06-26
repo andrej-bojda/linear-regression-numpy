@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# PyCharm
+.idea/
+*.iml
+
+# uv
+.venv/
+
+# Generated plots (commit selectively)
+plots/*.png
+plots/*.pdf
+
+# Jupyter
+.ipynb_checkpoints/

@@ -1,0 +1,11 @@
+[project]
+name = "linear-regression-numpy"
+version = "0.1.0"
+description = "Linear regression and gradient descent from scratch with NumPy"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.0",
+    "matplotlib>=3.9",
+]
