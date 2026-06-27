@@ -265,8 +265,8 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "matplotlib", specifier = ">=3.11.0" },
-    { name = "numpy", specifier = ">=2.4.6" },
+    { name = "matplotlib", specifier = ">=3.9" },
+    { name = "numpy", specifier = ">=2.0" },
 ]
 
 [[package]]
