@@ -1,7 +1,7 @@
 import numpy as np
 
 def predict(X,w,b):
-    return (X @ w) + b
+    return (X * w) + b
 
 def compute_loss(y,y_pred):
     return np.mean((y - y_pred)**2)
