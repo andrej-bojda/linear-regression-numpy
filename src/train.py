@@ -1,4 +1,4 @@
-from model import predict, compute_loss, compute_gradients
+from src.model import predict, compute_loss, compute_gradients
 
 def train(X, y, alpha, epochs):
     w = 0.0
@@ -13,9 +13,9 @@ def train(X, y, alpha, epochs):
     return w, b, loss_history
 
 if __name__ == "__main__":
-    from data import generate_data
+    from src.data import generate_data
     X, y, w_true, b_true = generate_data(w_true = 2.5, b_true = 1.0)
-    w, b, loss_history = train(X, y, alpha = 0.1, epochs = 2000)
+    w, b, loss_history = train(X, y, alpha = 0.1, epochs = 450)
     w_error = abs(w_true - w)
     b_error = abs(b_true - b)
     print("\n" + "=" * 55)

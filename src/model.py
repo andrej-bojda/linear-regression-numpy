@@ -12,9 +12,9 @@ def compute_gradients(X, y, y_pred):
 if __name__ == "__main__":
     from src.data import generate_data
     X, y, w_true, b_true = generate_data(2.5, 1.0, 100, 0.3, 42)
-    w = np.zeros((1,1))
+    w = 0.0
     b = 0.0
-    y_pred = predict(X, w , 0.0)
+    y_pred = predict(X, w , b)
     dw, db = compute_gradients(X, y, y_pred)
     print(f"dw : {dw}")
     print(f"db : {db}")
